@@ -1,0 +1,716 @@
+/* ALLMÄNNA INSTÄLLNINGAR */
+@import url(https://fonts.googleapis.com/css?family=Alex+Brush);
+
+
+	 
+body {
+	background: #fff url("/_img/back.png") repeat-x top center;
+	color:#393e8b;
+	font-family:Arial, Gotham, "Helvetica Neue", Helvetica, sans-serif;
+	}
+	
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family:Arial,  Gotham, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight:bold;
+	letter-spacing: -1px;
+	line-height: 1.1;
+	}
+	
+h1, .h1, h2, .h2, h3, .h3 {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+	
+h1, .h1, .jumbotron h1, .jumbotron .h1 {font-size:48px;}	
+h2, .h2 {font-size:23px;}	
+h3, .h3 {font-size:20px;}	
+h4, .h4 {font-size:16px;letter-spacing:0;}	
+
+h1 small, .h1 small, h2 small, .h2 small, h3 small, .h3 small, h1 .small, .h1 .small, h2 .small, .h2 .small, h3 .small, .h3 .small {
+font-size: 80%;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
+font-weight:700;
+line-height: 1;
+color:#999999;
+}
+
+.jumbotron h1 {margin-bottom:0;}
+.jumbotron p {font-size:14px; line-height:20px;}
+	
+
+a {
+	color: #393e8b;
+	font-weight: bold;
+	}
+	
+a:hover {
+	color:#98abc6;
+	text-decoration: underline;
+	}
+
+.bigfont {font-size:76px;line-height: 1.6;}
+
+.grey {color: #ccc; }
+
+hr {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #e3e3e3;
+}
+
+/* ------------------ MENY ----------------------------------------------------------------------------------------- */
+
+nav {}
+	
+.navbar-default {
+	background: #3b408d;
+	background: -moz-linear-gradient(top, #3b408d 1%, #253272 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#3b408d), color-stop(100%,#253272));
+	background: -webkit-linear-gradient(top, #3b408d 1%,#253272 100%);
+	background: -o-linear-gradient(top, #3b408d 1%,#253272 100%);
+	background: -ms-linear-gradient(top, #3b408d 1%,#253272 100%);
+	background: linear-gradient(to bottom, #3b408d 1%,#253272 100%);
+	padding-top:10px;
+}
+#navbar {}
+
+#navbar .logo img {max-height: 80px;}
+	
+.navbar {
+	-webkit-backface-visibility:hidden;
+	min-height: 80px;
+	margin-bottom: 20px;
+	border:0 solid transparent;
+}
+
+.navbar-nav {margin: 5px 0 0 0;}
+
+.navbar-fixed-top .navbar-collapse,.navbar-static-top .navbar-collapse,.navbar-fixed-bottom .navbar-collapse{
+	padding-right:15px;
+	padding-left:15px;
+	}
+
+/* Huvudmenyer **********/
+
+.navbar li a, .navbar-default .navbar-nav>li>a {
+	padding: 16px;
+	color: #fff;
+	background: none;
+	font-family:Arial, Gotham, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight:normal;
+	font-size: 16px;
+}
+
+.active a {
+	color: #cde0f9 !important;
+	background: #465693 !important;
+}
+
+.nav > li > a:hover, .nav > li > a:focus, .nav .open > a, .nav .open > a:hover, .nav .open > a:focus, .navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:focus,.navbar-default .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: #465693;
+}
+
+.caret {margin-left: 10px;}
+
+
+/* Undermenyer ***********/
+
+	.dropdown-menu {
+		min-width:150px;
+		padding: 5px 0 5px 0;
+		margin:2px 0 0;
+		text-align:left;
+		background-color: #333;
+		color: rgba(3, 3, 3, 0.6);
+		-webkit-background-clip:padding-box;
+		background-clip:padding-box;
+		border:0px solid #ccc;
+		border:0px solid rgba(0,0,0,.15);
+		border-radius:8px;
+		-webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);
+		box-shadow:0 6px 12px rgba(0,0,0,.175)
+	}
+
+	.dropdown-menu li a {
+		padding: 8px 20px 8px 20px;
+		color: #999999;
+		background: none;
+		font-size: 17px;
+	}
+	
+	.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+		color: #fff;
+		background-color: transparent;
+	}
+	
+	.dropdown-menu .active a {
+		color: #0099ff !important;
+		background: none !important;
+	}
+	
+/* Menyavdelare ***************/
+
+.menuspacer {
+	padding: 14px 0 0 0;
+	color: #999999;
+	font-size: 13px;
+	float:left;
+	}
+
+/* ------------------ NEDFALLANDE RUTA ----------------------------------------------------------------------------- */
+
+.nedfallande_body {
+	display:none;
+	position: absolute;
+	width: 100%;
+	z-index: 10001;
+	top:20px;
+	}
+
+#nedfallande {
+	position:absolute;
+	top:-300px;
+	left: 50%;
+}
+
+
+#nedfallande .container {
+	max-width: 720px;
+	padding: 20px 20px 20px 20px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 20px 0 rgba(1,1,1,.3);
+	box-shadow: 0 0 20px 0 rgba(1,1,1,.3);
+}
+
+#nedfallande .glyphicon-remove {
+	position: absolute;
+	z-index: 10001;
+	right:0px;
+	color:#000000;
+	font-size:25px;
+	cursor: pointer;
+	float:right;
+	padding:15px 15px 0 0;
+	}
+
+
+
+/* ------------------ HEADER --------------------------------------------------------------------------------------- */
+
+header {
+	
+	}
+
+#header {}
+	
+#header p {
+	text-align:right;
+	padding: 20px 0 0 0;
+	font-size: 20px;
+	line-height: 1.33;
+	color:#fff;
+	}
+
+
+	
+/* ------------------ INNEHÅLL ------------------------------------------------------------------------------------- */
+
+.absolutrubrik {position:absolute;z-index:1;top:-130px;left:40px;text-align:center;}
+.versal {margin-bottom:0;text-transform:uppercase; font-size:23px; font-weight:bold;}
+.alex {font-family: 'Alex Brush', cursive;font-size:64px;font-weight:normal;line-height:50px;}
+.vit {color:#fff;}
+
+.startbox {min-height:280px;}
+
+#main {
+	border-bottom: 0 solid #fff;
+	padding:20px 0 40px 0;
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+padding-right: 30px;
+padding-left: 30px;
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+border-radius: 0;
+}
+
+.jumbotron {
+padding: 20px 0;
+background: url("/_img/layout/skugga.png") no-repeat bottom center;
+border-bottom: 1px solid #dfdfdf;
+}
+
+
+.panel-primary {
+background-color: #e9f1fc;
+}
+
+.panel-info {
+background-color: #f6f6f6;
+}
+
+.panel {
+margin-bottom: 20px;
+border: 0 solid transparent;
+border-radius: 0;
+}
+
+.panel2 {
+margin-bottom: 20px;
+border: 0 solid transparent;
+border-radius: 0;
+background: transparent;
+box-shadow:0 0 0;
+}
+
+.panel-img {
+border: 0 solid transparent;
+border-radius: 0;
+background: transparent;
+box-shadow:0 0 0;
+}
+
+.panel-body {
+padding: 30px ;
+}
+
+.panel-body1 {
+padding: 30px 30px 0px 30px ;
+}
+
+.panel-body2 {
+padding: 0px 30px 0px 30px ;
+}
+
+.spec-button-right {
+float:right;
+margin-top:-35px;
+-webkit-border-radius: 35px 0 8px 35px;
+border-radius: 35px 0 8px 35px;
+}
+
+.spec-bigbutton-center {
+display:block;
+margin: 0 auto;
+padding: 15px 40px 15px 40px;
+-webkit-border-radius: 45px 45px 0 0;
+border-radius: 45px 45px 0 0;
+margin-bottom: -40px;
+}
+
+.imgborder {
+padding: 10px;
+border: 1px solid #eeeeee; 
+margin-bottom: 20px;
+}
+
+/* ------------------ BILDSPEL ------------------------------------------------------------------------------------- */
+
+#carousel { max-height:400px;}
+
+.toppbild {margin-top:80px;border-bottom:5px solid #393e8b;margin-left:0;margin-right:0;}
+
+.carousel-control .glyphicon-chevron-left
+{margin-left:-40%!important;}
+.carousel-control .glyphicon-chevron-right
+{margin-right:-40%!important;}
+
+.carousel-caption {
+position: absolute;
+right: 0%;
+bottom: 0;
+left: 0%;
+z-index: 10;
+padding-top: 20px;
+padding-bottom: 20px;
+color: #fff;
+text-align: center;
+text-shadow: 0 1px 2px rgba(0,0,0,.6);
+background: rgba(0,0,0,.4);
+font-size:28px;
+}
+
+#carousel a, #carousel a:link, #carousel a:visited, #carousel a:hover, #carousel a:active {
+	color: #fff;
+}
+
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 350px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+
+/* ------------------ GALLERIER ------------------------------------------------------------------------------------ */
+
+.myGalleries img, .myGalleries a {
+float:left;
+}
+
+
+.myGalleries a {}
+
+.myGalleries img {
+border: 1px solid #666;
+margin: 0 15px 15px 0;
+padding: 0;
+background-color: #fff;
+-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+}
+
+#swipebox-overlay {
+background: rgba(0, 0, 0, 0.5) !important;
+color: rgba(0, 0, 0, 0.5);
+}
+
+#swipebox-overlay .slide img {
+-webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.6);
+box-shadow: 0 0 10px 0 rgba(0,0,0,0.6);
+}
+
+#swipebox-bottom-bar, #swipebox-top-bar {opacity: 0.95;}
+
+#swipebox-close {
+margin-top:-10px;
+margin-right:-10px;
+zoom: 150%;
+}
+
+/* ------------------ FORMULÄR & MEDDELANDE ------------------------------------------------------------------------ */
+
+.skicka {margin-left:30px;}
+
+.g-recaptcha iframe {max-width:100% !important;}
+
+.form-horizontal .control-label {
+padding-top: 7px;
+margin-bottom: 0;
+text-align: left;
+}
+
+#message-sent, #message-fail, #message-fail-captcha {
+	background-color: #fff ;
+	padding:25px 10px 25px 10px;
+	margin-top:20px;
+	margin-bottom:20px;
+	-webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+	}
+
+
+.message-info .text {
+	font-family:'Open Sans Condensed', Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:700;
+	letter-spacing: -1px;
+	font-size:27px;
+	line-height:35px;
+	color: #000000;
+	}
+	
+.message-info .glyphicon {margin-right:10px;}
+
+.message-info .glyphicon-ok {
+font-family: 'Glyphicons Halflings';
+font-size:20px;
+color: #339900;
+font-style: normal;
+font-weight: 700;
+margin-right:10px;
+}
+
+.message-info .glyphicon-remove {
+font-family: 'Glyphicons Halflings';
+font-size:20px;
+color: #c9302c;
+font-style: normal;
+font-weight: 700;
+margin-right:10px;
+}
+
+.message-info .btn-danger {background-color: #c9302c;}
+
+.message-info .btn {
+font-family:'Open Sans Condensed', Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight:700;
+padding: 10px 20px;
+margin-bottom: 0;
+font-size: 20px;
+border: 1px solid transparent;
+border-radius: 6px;
+}
+
+.g-recaptcha {background: url(/_img/layout/img_loader.gif) no-repeat 145px 30px;}
+
+
+/* ------------------ FOOTER --------------------------------------------------------------------------------------- */
+
+aside {
+	background: #3b408d;
+	background: -moz-linear-gradient(top, #3b408d 1%, #253272 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#3b408d), color-stop(100%,#253272));
+	background: -webkit-linear-gradient(top, #3b408d 1%,#253272 100%);
+	background: -o-linear-gradient(top, #3b408d 1%,#253272 100%);
+	background: -ms-linear-gradient(top, #3b408d 1%,#253272 100%);
+	background: linear-gradient(to bottom, #3b408d 1%,#253272 100%);
+	margin-top: -20px;
+	margin-bottom: -20px;
+	color:#fff;
+}
+
+#adress {}
+
+#adress .row {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	}
+	
+#adress .panel {
+	margin-bottom: 0;
+	background:transparent;
+}
+
+#adress  .panel-body {
+padding: 10px 30px;
+}
+
+#adress h3 {
+	letter-spacing: 0;
+	font-family: 'Alex Brush', cursive;
+	font-weight:normal;
+	font-size:30px;
+	margin-bottom:0;
+	}
+
+#adress a {
+	color: #fff;
+	font-weight: bold;
+	}
+	
+#adress a:hover {
+	color:#98abc6;
+	text-decoration: underline;
+	}
+	
+.tel-nowrap {white-space: nowrap;}
+
+/* ------------------ KARTA --------------------------------------------------------------------------------------- */
+
+.g_karta {
+position: relative;
+width: 100%;
+height: 300px;
+display: inline-block;
+float: left;
+margin: 0 19px 0 0;
+}
+
+.g_karta iframe {
+position: relative;
+border: none;
+display: inline-block;
+outline: none;
+width: 100%;
+height: 300px;
+background: url(/_img/layout/img_loader.gif) no-repeat center center;
+pointer-events: none;
+}
+
+.svartvit {
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: grayscale(100%);
+filter: gray;
+}
+
+/* ------------------ COPYRIGHT ------------------------------------------------------------------------------------ */
+
+
+footer {background-color:#e9f1fc; text-align:center;}
+
+#copyright {}
+
+#copyright .panel-body {padding: 20px 30px 20px 30px;}
+	
+#copyright p {margin:0;}
+	
+#copyright .text, #copyright a  {
+	color:#383e8a;	
+	font-weight:normal;
+	}
+	
+#copyright a:hover {
+	color:#999;
+	text-decoration:none;
+	}
+
+/* ------------------ NEDAN FÖLJER OLIKA UPPLÖSNINGAR -------------------------------------------------------------- */
+
+
+/* ------------------ Storlek lg, storskärm ------------------------------------------------------------------------ */
+
+
+@media only screen and ( min-width: 1200px) {
+
+
+}
+
+
+/* ------------------ Storlek md, mediumskärm ------------------------------------------------------------------------ */
+
+
+@media only screen and ( max-width: 1200px) {
+
+.absolutrubrik {top:-90px;left:200px;}
+.alex {font-size:35px; line-height:35px;}
+.versal {font-size:18px;}
+
+.startbox {min-height:340px;}
+
+.navbar li a, .navbar-default .navbar-nav>li>a {
+	padding: 16px 10px;
+}
+
+
+}
+
+
+
+
+/* ------------------ Storlek sm, Liggande mobil & surfplatta ------------------------------------------------------ */
+
+
+@media only screen and ( max-width: 992px) {
+
+.absolutrubrik {top:-130px;left:20px;}
+.alex {font-size:40px; line-height:40px;}
+
+.startbox {min-height:0px;}
+
+.navbar li a, .navbar-default .navbar-nav>li>a {
+	padding: 10px 6px;
+	font-size: 12px;
+}
+
+}
+
+
+/* ------------------ Storlek xs, mobil ---------------------------------------------------------------------------- */
+
+
+@media only screen and ( max-width: 767px) {
+
+.absolutrubrik {top:0px;left:0px;position:relative;z-index:0;}
+.absolutrubrik .vit {color:#393e8b;}
+.alex {font-size:25px; line-height:25px;}
+.versal {margin-bottom:0;text-transform:uppercase; font-size:18px; font-weight:bold;}
+
+.navbar li a, .navbar-default .navbar-nav>li>a {
+	padding: 16px;
+	font-size: 16px;
+}
+
+#nedfallande .container {
+	max-width: 100%;
+}
+
+.mobiltest {padding:0px!important;}
+
+#nedfallande {
+	position:absolute;
+	top:-300px;
+	left: 0%;
+	margin-left: 10px !important;
+	margin-right: 10px !important;
+}
+
+#copyright .text, #copyright a  {
+	text-align: center;
+	}
+  
+  #header p {
+	text-align:center;
+	padding: 0 0 0 0;
+	font-size: 20px;
+	line-height: 1.33;
+	color:#fff;
+	}
+
+nav {background: none;}
+	
+#navbar .row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.menuspacer { display:none;}
+
+/* Navigering till meny **********/
+
+.navbar-toggle {
+	float:right;
+	padding:2px 10px;
+	margin-top:5px;
+	margin-right:0px;
+	margin-bottom:5px;
+	border: 0 solid transparent;
+}
+
+.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{
+	background-color: transparent;
+}
+.navbar-toggle .icon-bar {
+	display:block;
+	width:25px;
+	height: 4px;
+	background-color: #fff !important;
+	border-radius: 1px;
+}
+
+/* Huvud och Undermenyer **********/
+
+.navbar-nav {
+margin: 0 -15px;
+border-bottom: 1px solid #666666;
+}
+.dropdown-menu {
+padding: 0;
+}
+.nav>li, .dropdown-menu>li>a {
+border-top: 1px solid #666666;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+color:#ccc;	}
+	
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+color:#fff;	}
+
+.dropdown-menu>li>a {
+background-color:#525252;
+}
+
+.navbar-nav .open .dropdown-menu>li>a {
+line-height: 25px;
+}
+
+.navbar-nav .open .dropdown-menu>li>a, .navbar-nav .open .dropdown-menu .dropdown-header {
+padding: 5px 15px 5px 30px;
+}
+
+/*******************************/
+
+
+}
+
+/* ------------------ Slut ----------------------------------------------------------------------------------------- */

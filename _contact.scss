@@ -1,0 +1,43 @@
+.body-contact {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:30px;
+
+    .contact-text {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width:370px;
+
+        h3 {
+            margin-top:50px;
+        }
+        p {
+            margin-bottom:50px;
+        }
+
+    }
+    .contact-image {
+
+        display:flex;
+        height:500px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:769px){
+    
+    h2 {
+        margin-left:20px;
+    }
+
+    .body-contact{
+            justify-content: center;
+
+        .contact-image {
+            display:none;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.body-services {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.body-services > div {
+  width: 450px;
+}
+.body-services .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.body-services .va {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.body-services .agri {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.body-services .drainage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.body-services .title-work {
+  width: 500px;
+}
+.body-services .va-work {
+  width: 500px;
+}
+.body-services .agri-work {
+  width: 500px;
+}
+.body-services .drainage-work {
+  width: 500px;
+}
+.body-services img {
+  height: 200px;
+}
+
+@media (max-width: 769px) {
+  p, h3 {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 569px) {
+  .body-services .title {
+    flex-direction: column;
+    gap: 22px;
+  }
+  .body-services .title-work {
+    width: 300px;
+  }
+  .body-services .agri {
+    flex-direction: column;
+    gap: 22px;
+  }
+  .body-services .agri-work {
+    width: 300px;
+  }
+  .body-services .va {
+    flex-direction: column;
+    gap: 22px;
+  }
+  .body-services .va-work {
+    width: 300px;
+  }
+  .body-services .drainage {
+    flex-direction: column;
+    gap: 22px;
+  }
+  .body-services .drainage-work {
+    width: 300px;
+  }
+}
